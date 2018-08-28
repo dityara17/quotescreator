@@ -15,8 +15,8 @@ echo "\n";
 
 $folder = "./quotes/";
 $overlay = "overlay.png";
-$font_quote = "GOGOIA-Regular.otf";
-$font_copyright = "Requited Script Demo.ttf";
+$font_quote = realpath("GOGOIA-Regular.otf");
+$font_copyright = realpath("Requited Script Demo.ttf");
 $filename = $folder.md5(rand(000,999)).".png";
 echo "Insert Quote :";
 $quote = trim(fgets(STDIN));
